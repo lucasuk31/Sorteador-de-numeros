@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.75rem;
+}
+
+@media (width >= 80rem) {
+  header {
+    position: relative;
+
+    & a {
+      position: absolute;
+      top: 4.75rem;
+      left: 7.5rem;
+    }
+  }
+}

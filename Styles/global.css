@@ -69,5 +69,8 @@
   --fs-flex-p-small: .75rem;
   --fs-flex-label-medium: 1.25rem;
   --fs-flex-label-small: 1rem;
+}
 
+body {
+  background-color: var(--background-primary);
 }
