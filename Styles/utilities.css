@@ -1,0 +1,10 @@
+.container {
+  padding-inline: 2.25rem;
+  display: block;
+}
+
+@media (width >= 80rem) {
+  .container {
+    padding-inline: 8.375rem;
+  }
+}
