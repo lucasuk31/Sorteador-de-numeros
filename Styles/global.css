@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+  /* CONTENT COLORS */
+  --content: #FFFFFF;
+  --content-secondary: ##C7C9CC;
+  --content-tertiary: #D9D9D9;
+  --content-brand: #C58DE7;
+  --color-inverse: #030203;
+
+  /* BACKGROUND */
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222E;
+  --background-brand: #C58DE7;
+  --background-gray: #3D3D3D;
+
+  /* ACCENT */
+  --accent-pink: #D586E0;
+  --accent-blue: #91A1FA;
+  --accent-green: #77C0Af;
+  --accent-lime: #D1DC97;
+  --accent-red: #E9A9B3;
+
+  /* GRADIENT */
+  --gradient-border: linear-gradient(
+    #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%
+  )
+  --gradient-background: linear-gradient(#D586E0 0%, #91A1FA 98.93%)
+  --gradient-content: linear-gradient(#C7C9CC 0%, #3D3D3D 100%)
+
+  /* FONT FAMILY */
+  --ff-sora: "Sora", sans-serif;
+  --ff-roboto-mono: "Roboto Mono", monospace;
+  --ff-roboto-flex: "Roboto Flex", sans-serif;
+
+  /* FONT WEIGHT */
+  --fw-sora-small: 700;
+  --fw-sora-medium: 800;
+  --fw-sora-large: 800;
+
+  --fw-mono-overline: 700;
+
+  --fw-flex-p-large: 500;
+  --fw-flex-p-medium: 500;
+  --fw-flex-p-small: 500;
+  --fw-flex-label-medium: 700;
+  --fw-flex-label-small: 700;
+
+  /* FONT SIZE */
+  --fs-sora-small: 2rem;
+  --fs-sora-medium: 2.5rem;
+  --fs-sora-large: 4.5rem;
+
+  --fs-mono-overline: 1rem;
+
+  --fs-flex-p-large: 1rem;
+  --fs-flex-p-medium: .875rem;
+  --fs-flex-p-small: .75rem;
+  --fs-flex-label-medium: 1.25rem;
+  --fs-flex-label-small: 1rem;
+
+}
