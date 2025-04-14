@@ -6,12 +6,8 @@ header {
 
 @media (width >= 80rem) {
   header {
-    position: relative;
-
-    & a {
-      position: absolute;
-      top: 4.75rem;
-      left: 7.5rem;
-    }
+    display: block;
+    padding-top: 4.75rem;
+    padding-left: 7.5rem;
   }
 }
