@@ -24,31 +24,31 @@
           <p>Online - gratuito</p>
           <h1>Sorteador de números</h1>
         </div>
-        <main id="initial">
+        <main id="initialPage">
           <h2>Quero sortear:</h2>
           <p>
             Defina o intervalo e a quantidade de números, clique em "Sortear" e
             veja os resultados na tela. É rápido e fácil!
           </p>
-  
+
           <form>
             <div id="fieldNumbers">
               <div class="input-wrapper">
                 <label for="numbers">Números</label>
                 <input type="number" class="numberIn" id="numbers" value="2" />
               </div>
-  
+
               <div class="input-wrapper">
                 <label for="start">De</label>
                 <input type="number" class="numberIn" id="start" value="1" />
               </div>
-  
+
               <div class="input-wrapper">
                 <label for="end">Até</label>
                 <input type="number" class="numberIn" id="end" value="100" />
               </div>
             </div>
-  
+
             <div id="fieldCheck">
               <label class="switch">
                 <input type="checkbox" id="repeat" checked />
@@ -56,11 +56,27 @@
               </label>
               <label id="input-label" for="repeat">Não repetir número</label>
             </div>
-  
+
             <button type="submit" class="btn">
-              SORTEAR <img src="./Assets/Icons/arrow.svg" alt="" />
+              Sortear <img src="./Assets/Icons/arrow.svg" alt="" />
             </button>
           </form>
+        </main>
+
+        <main id="resultPage">
+          <h2>Resultado do sorteio</h2>
+          <p><span>1</span>º resultado</p>
+          <div id="result-wrapper">
+            <div class="resultBox">
+              <span>23</span>
+            </div>
+            <div class="resultBox">
+              <span>12</span>
+            </div>
+          </div>
+          <button type="submit" class="btn" id="drawAgain">
+            Sortear novamente<img src="./Assets/Icons/play.svg" alt="" />
+          </button>
         </main>
         <div id="faq">
           <div class="faqBox">
@@ -73,20 +89,20 @@
               </p>
             </div>
           </div>
-  
+
           <div class="faqBox">
             <img src="./Assets/Icons/chat.svg" alt="Ícone de homem falando" />
             <div>
               <h3>Posso escolher o intervalo dos números?</h3>
               <p>
-                Sim, você pode definir os valores mínimo e máximo para o intervalo
-                dos números sorteados.
+                Sim, você pode definir os valores mínimo e máximo para o
+                intervalo dos números sorteados.
               </p>
             </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
     <script src="./Scripts/script.js"></script>
   </body>
 </html>

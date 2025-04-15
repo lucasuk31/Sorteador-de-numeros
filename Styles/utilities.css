@@ -3,6 +3,26 @@
   display: block;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  margin-top: 2.5rem;
+  padding-block: 1rem;
+
+  width: 100%;
+  background: var(--background-tertiary);
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font: var(--fw-flex-label-medium) var(--fs-flex-label-small) / 1.5
+    var(--ff-roboto-flex);
+  color: white;
+}
+
 @media (width >= 80rem) {
   .container {
     padding-inline: 7.5rem;

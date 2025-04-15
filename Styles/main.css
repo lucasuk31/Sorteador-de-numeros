@@ -1,3 +1,38 @@
+#initialPage {
+  display: block;
+}
+
+#resultPage {
+  text-align: center;
+  display: none;
+  & p {
+    text-align: center;
+    text-transform: uppercase;
+    font: var(--fw-mono-overline) var(--fs-mono-overline) / 1.5
+      var(--ff-roboto-mono);
+  }
+
+  #result-wrapper {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    & .resultBox {
+      max-width: 5.25rem;
+      height: 6.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & span {
+        font: var(--fw-mono-overline) 3rem/1.5 var(--ff-roboto-mono);
+        color: var(--content-brand);
+      }
+    }
+  }
+}
+
 main {
   margin-top: 2.625rem;
 
@@ -113,25 +148,6 @@ main {
     #input-label {
       font: var(--fw-flex-label-medium) var(--fs-flex-p-small) / 1.5
         var(--ff-roboto-flex);
-    }
-
-    & .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      gap: 0.5rem;
-
-      margin-top: 2.5rem;
-      padding-block: 1rem;
-
-      width: 100%;
-      background: var(--background-tertiary);
-      border: none;
-      border-radius: 0.5rem;
-      font: var(--fw-flex-label-medium) var(--fs-flex-label-small) / 1.5
-        var(--ff-roboto-flex);
-      color: white;
     }
   }
 }
