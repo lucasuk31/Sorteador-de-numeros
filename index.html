@@ -18,6 +18,75 @@
         ><img src="./Assets/Images/logo.svg" alt="Logo da Numbers"
       /></a>
     </header>
+    <div class="container">
+      <div class="desktop-only">
+        <div id="hero">
+          <p>Online - gratuito</p>
+          <h1>Sorteador de números</h1>
+        </div>
+        <main id="initial">
+          <h2>Quero sortear:</h2>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+  
+          <form>
+            <div id="fieldNumbers">
+              <div class="input-wrapper">
+                <label for="numbers">Números</label>
+                <input type="number" class="numberIn" id="numbers" value="2" />
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="start">De</label>
+                <input type="number" class="numberIn" id="start" value="1" />
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="end">Até</label>
+                <input type="number" class="numberIn" id="end" value="100" />
+              </div>
+            </div>
+  
+            <div id="fieldCheck">
+              <label class="switch">
+                <input type="checkbox" id="repeat" checked />
+                <span class="slider round"></span>
+              </label>
+              <label id="input-label" for="repeat">Não repetir número</label>
+            </div>
+  
+            <button type="submit" class="btn">
+              SORTEAR <img src="./Assets/Icons/arrow.svg" alt="" />
+            </button>
+          </form>
+        </main>
+        <div id="faq">
+          <div class="faqBox">
+            <img src="./Assets/Icons/chat.svg" alt="Ícone de homem falando" />
+            <div>
+              <h3>Como funciona o sorteador de números?</h3>
+              <p>
+                O sorteador utiliza um algoritmo de geração aleatória para criar
+                números dentro do intervalo especificado pelo usuário.
+              </p>
+            </div>
+          </div>
+  
+          <div class="faqBox">
+            <img src="./Assets/Icons/chat.svg" alt="Ícone de homem falando" />
+            <div>
+              <h3>Posso escolher o intervalo dos números?</h3>
+              <p>
+                Sim, você pode definir os valores mínimo e máximo para o intervalo
+                dos números sorteados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     <script src="./Scripts/script.js"></script>
   </body>
 </html>

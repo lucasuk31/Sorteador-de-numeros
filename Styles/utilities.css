@@ -5,6 +5,17 @@
 
 @media (width >= 80rem) {
   .container {
-    padding-inline: 8.375rem;
+    padding-inline: 7.5rem;
+  }
+
+  .desktop-only {
+    margin-top: 5.625rem;
+    max-width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas:
+      "hero main"
+      "faq main";
+    grid-template-columns: 50% 43%;
   }
 }

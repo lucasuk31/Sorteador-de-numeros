@@ -1,0 +1,37 @@
+#faq {
+  margin-top: 5rem;
+  margin-bottom: 2.8125rem;
+  display: grid;
+  gap: 2.25rem;
+
+  & .faqBox {
+    display: flex;
+    gap: 0.5rem;
+
+    & img {
+      align-self: flex-start;
+    }
+  }
+
+  & h3 {
+    color: var(--content-brand);
+    font: var(--fw-flex-p-medium) var(--fs-flex-p-medium) / 1.5
+      var(--ff-roboto-flex);
+  }
+
+  & p {
+    color: var(--content-secondary);
+    font: var(--fw-flex-p-medium) var(--fs-flex-p-small) / 1.5
+      var(--ff-roboto-flex);
+  }
+}
+
+@media (width >= 80rem) {
+  #faq {
+    grid-area: faq;
+    padding: 0;
+    margin: 0;
+    margin-top: 2.5rem;
+    width: 76%;
+  }
+}
