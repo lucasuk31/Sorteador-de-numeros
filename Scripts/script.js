@@ -7,6 +7,12 @@ const initialPage = document.getElementById("initialPage")
 const resultPage = document.getElementById("resultPage")
 let retry = document.getElementById("drawAgain")
 
+let resultWrapper = document.getElementById("result-wrapper")
+
+let num
+
+numbers.focus()
+
 function drawNumber() {
   let numbers = document.getElementById("numbers")
   numbers = parseInt(numbers.value)
@@ -22,24 +28,24 @@ function drawNumber() {
       if (numbers <= max - min + 1) {
         showResult()
         for (let i = 1; i <= numbers; i++) {
-          let num = Math.floor(Math.random() * (max - min + 1)) + min
+          num = Math.floor(Math.random() * (max - min + 1)) + min
           while (randomNumbers.includes(num)) {
             num = Math.floor(Math.random() * (max - min + 1)) + min
           }
           randomNumbers.push(num)
-          console.log(randomNumbers)
+          addNumberToResultPage()
         }
       } else {
         alert(
-          "A quantidade de números desejada a serem sorteados deve ser menor ou igual ao fim - inicio + 1."
+          "A quantidade de números desejada a serem sorteados deve ser menor ou igual ao fim - inicio + 1. Ou, a opcao de repetir deve ser desabilitada."
         )
       }
     } else {
-      showResult()
       for (let i = 1; i <= numbers; i++) {
-        let num = Math.floor(Math.random() * (max - min + 1)) + min
+        num = Math.floor(Math.random() * (max - min + 1)) + min
         randomNumbers.push(num)
-        console.log(randomNumbers)
+        addNumberToResultPage()
+        showResult()
       }
     }
   } else {
@@ -59,6 +65,21 @@ function showInitial() {
   initialPage.style.display = "block"
 }
 
+function addNumberToResultPage() {
+  try {
+    let div = document.createElement("div")
+    div.classList.add("resultBox")
+    resultWrapper.append(div)
+
+    let span = document.createElement("span")
+    span.textContent = num
+    div.append(span)
+  } catch (error) {
+    alert("Nao foi possivel mostrar o número sorteado.")
+    console.log(error)
+  }
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault()
   drawNumber()
@@ -67,4 +88,5 @@ form.addEventListener("submit", (event) => {
 retry.addEventListener("click", (event) => {
   event.preventDefault()
   showInitial()
+  resultWrapper.innerHTML = ""
 })
