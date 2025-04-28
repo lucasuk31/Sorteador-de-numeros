@@ -5,6 +5,8 @@
 let form = document.querySelector("form")
 const initialPage = document.getElementById("initialPage")
 const resultPage = document.getElementById("resultPage")
+let round = document.getElementById("round")
+let roundNumber = 1
 let retry = document.getElementById("drawAgain")
 
 let resultWrapper = document.getElementById("result-wrapper")
@@ -22,6 +24,7 @@ function drawNumber() {
   max = parseInt(max.value)
   let checkbox = document.getElementById("repeat")
   let randomNumbers = []
+  roundNumber++
 
   if (numbers > 0 && min <= max) {
     if (checkbox.checked) {
@@ -82,6 +85,7 @@ function addNumberToResultPage() {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault()
+  round.textContent = roundNumber
   drawNumber()
 })
 
